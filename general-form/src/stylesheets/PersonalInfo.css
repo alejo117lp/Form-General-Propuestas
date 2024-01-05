@@ -1,0 +1,51 @@
+label, input{
+    font-size: 15px;
+}
+
+input{
+    width: 100%;
+    min-width: 90px;
+}
+
+.data-row{
+    padding: 5px 0px;
+}
+
+.info-box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 15px;
+    align-items: center;
+    grid-gap:15px;
+}
+
+.form-box{
+    background-color: burlywood;
+
+}
+
+.labels-container, .inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels-container{
+    grid-column: 1;
+}
+
+.inputs-container{
+    grid-column: 2;
+}
+
+.birth-info{
+    display: flex;
+}
+
+.form-control{
+    width: 10px;
+}
+
+.intermediate-form-item{
+    padding-left: 20px;
+    min-width: 150px;
+}
