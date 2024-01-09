@@ -13,11 +13,15 @@ function PersonalInfo(props){
                     <label>Nombre Completo:</label>
                     <br/>
                     <label>Fecha de Nacimiento:</label>
+                    <br/>
+                    <label>Documento de identidad:</label>
+                    <br/>
+                    <label>Libreta Militar: </label>
                 </div>
                 <div className="inputs-container date-row">
                     <input name="name" type="text" placeholder="Nombre completo"></input>
                     <br/>
-                    <div className="birth-info">
+                    <div className="birth-info double-data">
                         <DateTime className="date-time-props"
                         name="birth-date"
                         inputProps={{ placeholder: "dd/mm/aaaa" }}
@@ -27,7 +31,20 @@ function PersonalInfo(props){
                         <label className="intermediate-form-item">Lugar de Nacimiento:</label>
                         <input name="place-birth" type="text" placeholder="Lugar de nacimiento"></input>
                     </div>
-                    
+                    <br/>
+                    <div className="id-info-box double-data">
+                        <input name="id-document" type="text" placeholder="Número de Documento"></input>
+                        <label className="intermediate-form-item-short"> De: </label>
+                        <input name="city-id-document" type="text" placeholder="Lugar de Expedición"></input>
+                    </div>
+                    <br/>
+                    <div className="id-info-box double-data">
+                        <input name="military-card" type="number" placeholder="Número libreta"></input>
+                        <label className="intermediate-form-item-short-2">Clase:</label>
+                        <input name="military-card-class" type="text" placeholder="Primera/Segunda"></input>
+                        <label className="intermediate-form-item-short-2">Distrito:</label>
+                        <input name="military-district" type="number" placeholder="Número distrito"></input>
+                    </div>
                 </div>
             </form>
         </div>
