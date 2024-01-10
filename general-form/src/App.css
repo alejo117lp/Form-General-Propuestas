@@ -17,6 +17,20 @@ h1{
   margin: 40px 0;
 }
 
+label, input{
+  font-size: 15px;
+}
+
+input{
+  width: 100%;
+  min-width: 190px;
+  min-height: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: rgb(239, 239, 239);
+  border-color: rgb(47, 47, 47);
+}
+
 .App{
   min-height: 100vh;
 }

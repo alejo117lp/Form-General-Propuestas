@@ -1,6 +1,8 @@
 import './App.css';
 import PersonalInfo from './components/personal-info';
 import Header from './components/Header';
+import FormBox from './components/FormBox';
+import PersonalInformation from './components/PersonalInfo';
 
 function App() {
   return (
@@ -15,8 +17,16 @@ function App() {
       />
       <div className='principal-container'>
         <h1>Datos Generales</h1>
-        <PersonalInfo />
+        <PersonalInformation 
+         nameBox={"Información Personal"}
+        />
+        <br/>
+        <FormBox 
+          nameBox={"Domicilio"}
+        />
+       
       </div>
+      <br/>
     </div>
   );
 }

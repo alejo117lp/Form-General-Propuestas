@@ -1,0 +1,28 @@
+.one-field-container{
+    display: grid;
+    grid-template-columns: 90px 2fr;
+    padding: 15px;
+    align-items: center;
+    grid-gap: 15px;
+}
+
+.two-field-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap:15px;
+}
+
+.three-field-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap:15px;
+}
+
+.birth-data{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-gap:15px;
+}
