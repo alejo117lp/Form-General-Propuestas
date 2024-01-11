@@ -17,7 +17,7 @@ function PersonalInformation( {nameBox} ){
                 inputType={"text"}
             />
 
-            <div className="birth-data">
+            <div className="box-date">
                 <div className="one-field-container">
                 <label>Fecha de nacimiento: </label>
                   <DateTime className="date-time-props"

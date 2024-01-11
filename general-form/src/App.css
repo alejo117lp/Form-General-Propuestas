@@ -9,12 +9,14 @@ html, body{
 }
 
 h1{
-  max-width: 940px;
+  font-family:'Roboto';
+  font-weight: 500;
+  margin: 20px 0;
+  /*max-width: 940px;
   font-size: 2.5em;
-  font-family: roboto, sans-serif;
   font-weight: 700;
   line-height: 1.1;
-  margin: 40px 0;
+  margin: 40px 0;*/
 }
 
 label, input{
@@ -41,4 +43,5 @@ input{
   justify-content: flex-start;
   align-items: center;
 }
+
 

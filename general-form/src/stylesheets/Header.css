@@ -1,5 +1,6 @@
 .header-container{
-    background-color: rgb(0, 0, 0);
+    background-color: #5c9c31;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,16 +11,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 15px;
+    padding-right: 150px;
 }
 
 .menu-item{
     margin: 0px 10px;
 }
 
-
-
 .header-image{
-    max-width: 500px;
-    padding: 10px 15px;
+    max-width: 150px;
+    padding: 10px 150px;
 }

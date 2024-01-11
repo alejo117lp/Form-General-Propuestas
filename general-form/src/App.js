@@ -1,30 +1,35 @@
 import './App.css';
-import PersonalInfo from './components/personal-info';
 import Header from './components/Header';
 import FormBox from './components/FormBox';
 import PersonalInformation from './components/PersonalInfo';
+import HomeInformation from './components/HomeInfo';
+import SocialSecurity from './components/SocialSecurity';
+import ExclusiveInitInfo from './components/ExclusiveInitInfo';
 
 function App() {
   return (
     <div className="App">
       <Header
         menu1="Inicio"
-        menu2="Corporativo"
-        menu3="Proyectos"
-        menu4="Actualidad"
-        menu5="Convocatorias"
-        menu6="Contacto"
+        menu2="Empleado"
+        menu3="Personal Fundación"
       />
       <div className='principal-container'>
         <h1>Datos Generales</h1>
+        <ExclusiveInitInfo
+          nameBox={"Información Exclusiva Personal Fundación"}
+        />
         <PersonalInformation 
          nameBox={"Información Personal"}
         />
         <br/>
-        <FormBox 
-          nameBox={"Domicilio"}
+        <HomeInformation 
+          nameBox={"Información Domicilio"}
         />
-       
+        <br/>
+        <SocialSecurity 
+          nameBox={"Información  Seguridad Social"}
+        />
       </div>
       <br/>
     </div>

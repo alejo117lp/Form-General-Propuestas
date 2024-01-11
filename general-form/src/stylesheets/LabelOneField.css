@@ -20,7 +20,7 @@
     grid-gap:15px;
 }
 
-.birth-data{
+.box-date{
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
