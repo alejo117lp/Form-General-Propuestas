@@ -16,9 +16,7 @@ function App() {
       />
       <div className='principal-container'>
         <h1>Datos Generales</h1>
-        <ExclusiveInitInfo
-          nameBox={"Información Exclusiva Personal Fundación"}
-        />
+        
         <PersonalInformation 
          nameBox={"Información Personal"}
         />

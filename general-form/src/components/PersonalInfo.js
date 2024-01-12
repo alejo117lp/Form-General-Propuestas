@@ -7,9 +7,8 @@ import "react-datetime/css/react-datetime.css";
 
 function PersonalInformation( {nameBox} ){
     return(
-        <div>
-        <h3>{nameBox}</h3>
         <div className="form-box">
+            <h3>{nameBox}</h3>
             <LabelOneField 
                 labelText={"Nombre Completo: "}
                 inputPlaceholder={"Nombre Completo"}
@@ -20,19 +19,19 @@ function PersonalInformation( {nameBox} ){
             <div className="box-date">
                 <div className="one-field-container">
                 <label>Fecha de nacimiento: </label>
-                  <DateTime className="date-time-props"
-                  name="birth-date"
-                  inputProps={{ placeholder: "dd/mm/aaaa" }}
-                  dateFormat="DD/MM/YYYY"
-                  timeFormat={false}
-                  />
+                    <DateTime className="date-time-props"
+                    name="birth-date"
+                    inputProps={{ placeholder: "aaaa/mm/dd" }}
+                    dateFormat="YYYY/MM/DD"
+                    timeFormat={false}
+                    />
                 </div>
                 <div className="one-field-container">
                 <label>Lugar de Nacimiento:</label>
-                  <input name="place-birth" type="text" placeholder="Lugar de nacimiento"></input>
+                    <input name="place-birth" type="text" placeholder="Lugar de nacimiento"></input>
                 </div>  
             </div>
-          
+            
             <LabelTwoFields
                 labelText="Documento de Identidad:"
                 inputPlaceholder="Número de documento"
@@ -85,7 +84,7 @@ function PersonalInformation( {nameBox} ){
                 inputType2={"text"}
             />
         </div>
-    </div>
+    
     );
 }
 

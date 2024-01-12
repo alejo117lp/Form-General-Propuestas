@@ -4,6 +4,7 @@ import LabelTwoFields from "./LabelTwoFields";
 import LabelThreeFields from "./LabelThreeFields";
 import DateTime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
+import TestCode from "./Test";
 
 function ExclusiveInitInfo( {nameBox} ){
     return(
@@ -49,7 +50,22 @@ function ExclusiveInitInfo( {nameBox} ){
                     inputType2={"text"}
                 />
 
+                <TestCode 
+                    labelText0={"Jornada:"}
+
+                    labelText={"MT:"}
+                    inputId={""}
+                    inputPlaceholder={""}
+                    inputType={"checkbox"}
+
+                    labelText2={"TC:"}
+                    inputId2={""}
+                    inputPlaceholder2={""}
+                    inputType2={"checkbox"}
+
+                    labelText3={"Estrato:"}
                 
+                />
             </div>
         </div>
     );
