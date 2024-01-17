@@ -3,7 +3,7 @@ import '../stylesheets/LabelOneField.css'
 import '../stylesheets/test.css'
 
 
-function TestCode( {labelText0,labelText, inputId, inputType, inputPlaceholder,
+function TwoCheckbox1( {labelText0,labelText, inputId, inputType, inputPlaceholder,
     labelText2, inputId2, inputType2, inputPlaceholder2, 
     labelText3, inputId3, inputType3, inputPlaceholder3, readOnly} ){
     return(
@@ -31,4 +31,4 @@ function TestCode( {labelText0,labelText, inputId, inputType, inputPlaceholder,
     );
 }
 
-export default TestCode;
+export default TwoCheckbox1;

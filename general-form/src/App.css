@@ -9,11 +9,9 @@ html, body{
   color: #333333;
 }
 
-
-
 h1{
-  font-family:'Roboto';
-  font-weight: 500;
+  font-family:'Work Sans';
+  /*font-weight: 500;*/
   margin: 20px 0;
 }
 
@@ -33,13 +31,28 @@ input{
   font-size: .875rem;
   color: #565656;
   padding: 8px 12px;
+  font-family:'Work Sans';
 }
 
 input::placeholder {
   font-weight: bold;
   opacity: 0.5;
   color: #565656;
+  font-family:'Work Sans';
 }
+
+select{
+  min-width: 150px;
+  min-height: 11px;
+  max-width: 188PX;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: .875rem;
+  color: #565656;
+  padding: 8px 12px;
+  font-family:'Work Sans';
+}
+
 
 .App{
   min-height: 100vh;
@@ -51,6 +64,25 @@ input::placeholder {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.three-selects-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap:15px;
+}
+
+.principal-button{
+  font-family: 'Work Sans';
+  font-size: 20px;
+  font-weight: 600;
+  color: #e3e3e3;
+  min-width: 160px;
+  min-height: 50px;
+  background-color: #5c9c31;
+  border-radius: 8px;
+  border: 1px solid #fff;
 }
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import LabelThreeFields from "./LabelThreeFields";
+import LabelOneSelect from "./LabelOneSelect";
 
 function SocialSecurity( {nameBox} ){
     return(
@@ -21,6 +22,22 @@ function SocialSecurity( {nameBox} ){
                 inputPlaceholder3={"Nombre Fondo Cesantías"}
                 inputType3={"text"}
             />
+            <div className="three-selects-container">
+                <LabelOneSelect 
+                    labelText="Prueba1: "
+                    initialOptions={['Select1', 'Select2']}
+                />
+
+                <LabelOneSelect 
+                    labelText="Prueba2: "
+                    initialOptions={['Select1', 'Select2']}
+                />
+
+                <LabelOneSelect 
+                    labelText="Prueba3: "
+                    initialOptions={['Select7', 'Select2', 'Select3', 'Select4']}
+                />
+            </div>
         </div>
     );
 }

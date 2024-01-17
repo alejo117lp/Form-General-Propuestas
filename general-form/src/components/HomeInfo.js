@@ -9,30 +9,30 @@ function HomeInformation( {nameBox} ){
             <h3>{nameBox}</h3>
             <LabelOneField 
                 labelText={"Dirección de residencia:"}
-                inputId={"home-address"}
+                inputId={"home_address"}
                 inputPlaceholder={"Dirección de residencia"}
                 inputType={"text"}
             />
             <LabelTwoFields 
                 labelText={"Barrio:"}
-                inputId={"neighborhood"}
+                inputId={"home_neighborhood"}
                 inputPlaceholder={"Nombre Barrio"}
                 inputType={"text"}
 
-                labelText2={"Municipio"}
-                inputId2={"municipality"}
+                labelText2={"Municipio:"}
+                inputId2={"home_city"}
                 inputPlaceholder2={"Nombre municipio"}
                 inputType2={"text"}
             />
 
             <LabelThreeFields 
                 labelText={"Teléfono 1:"}
-                inputId={"phone-1"}
+                inputId={"telephone1"}
                 inputPlaceholder={"Teléfono 1"}
                 inputType={"number"}
 
                 labelText2={"Teléfono 2:"}
-                inputId2={"phone-2"}
+                inputId2={"telephone2"}
                 inputPlaceholder2={"Teléfono 2"}
                 inputType2={"number"}
 
@@ -43,9 +43,9 @@ function HomeInformation( {nameBox} ){
             />
 
             <LabelOneField 
-                labelText={"Correo Electrónico:"}
-                inputId={"Email"}
-                inputPlaceholder={"Correo Electrónico"}
+                labelText={"Correo Electrónico Personal:"}
+                inputId={"email"}
+                inputPlaceholder={"Correo Electrónico Personal"}
                 inputType={"text"}
             />
         </div>

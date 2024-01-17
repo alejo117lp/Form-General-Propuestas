@@ -1,0 +1,7 @@
+.select-label-container{
+    display: grid;
+    grid-template-columns: 90px 2fr;
+    padding: 15px;
+    align-items: center;
+    grid-gap: 15px;
+}
