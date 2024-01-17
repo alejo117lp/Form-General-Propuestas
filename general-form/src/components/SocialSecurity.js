@@ -6,38 +6,37 @@ function SocialSecurity( {nameBox} ){
     return(
         <div className="form-box">
             <h3>{nameBox}</h3>
-            <LabelThreeFields 
-                labelText={"EPS:"}
-                inputId={"eps"}
-                inputPlaceholder={"Nombre EPS"}
-                inputType={"text"}
 
-                labelText2={"Pensiones:"}
-                inputId2={"pensiones"}
-                inputPlaceholder2={"Nombre Fondo de Pensiones"}
-                inputType2={"text"}
-
-                labelText3={"Cesantías:"}
-                inputId3={"cesantias"}
-                inputPlaceholder3={"Nombre Fondo Cesantías"}
-                inputType3={"text"}
+            <LabelOneSelect 
+                labelText="EPS: "
+                selectText= "Seleccione su EPS"
+                required={true}
+                initialOptions={['EPS COLMEDICA', 'EPS HUMANA VIVIR', 'EPS COMPENSAR', 'EPS SANITAS SA', 
+                'ADRESS', 'EPS SURA', 'EPS SALUD TOTAL', 'EPS SALUD COLPATRIA SA', 'EPS COOMEVA', 
+                'EPS FAMISANAR', 'SER OCCIDENTAL DE SALUD SOS', 'EPS CRUZ BLANCA', 'EPS SOLSALUD', 
+                'EPS SALUDVIDA SA', 'NUEVA EPS', 'EPS SAVIA SALUD', 'EPS MEDIMAS', 'EPS MALLAMAS', 
+                'EPS COOSALUD', 'COMFACHOCO', 'CAJACOPI', 'ASOCIACION INDGENA DEL CAUCA', 'MUTUAL SER', 
+                'EPS EMDISALUD', 'EPS ECOOPSOS', 'Comfenalco del Valle', 'ASOCIACION INDIGENA DEL CAUCA', 
+                'REGIMEN ESPECIAL MAGISTERIO', 'REGIMEN ESPECIAL POLICIA', 'REGIMEN ESPECIAL FUERZAS MILITARES', 
+                'EPS FOSYGA', 'EPS UNISALUD']}
             />
-            <div className="three-selects-container">
-                <LabelOneSelect 
-                    labelText="Prueba1: "
-                    initialOptions={['Select1', 'Select2']}
-                />
 
-                <LabelOneSelect 
-                    labelText="Prueba2: "
-                    initialOptions={['Select1', 'Select2']}
-                />
+            <LabelOneSelect 
+                labelText="Pensiones: "
+                selectText= "Seleccione su Fondo de Pensiones"
+                required={true}
+                initialOptions={['AFP PROTECCION', 'COLFONDOS', 'AFP SKANDIA', 'AFP HORIZONTE', 'AFP PORVENIR', 
+                'AFP COLPENSIONES', 'COLPFONDOS']}
+            />
 
-                <LabelOneSelect 
-                    labelText="Prueba3: "
-                    initialOptions={['Select7', 'Select2', 'Select3', 'Select4']}
-                />
-            </div>
+            <LabelOneSelect 
+                labelText="Cesantías: "
+                selectText= "Seleccione su Fondo de Cesantías"
+                required={true}
+                initialOptions={['PROTECCION', 'PORVENIR', 'HORIZONTE', 'COLFONDOS', 'SKANDIA', 
+                'FONDO NACIONAL DEL AHORRO', 'COLPENSIONES']}
+            />
+            
         </div>
     );
 }

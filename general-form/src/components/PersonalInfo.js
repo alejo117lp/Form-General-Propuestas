@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from 'react';
 import DateTime from "react-datetime";
 import LabelOneField from "./LabelOneField";
 import LabelTwoFields from "./LabelTwoFields";
 import LabelThreeFields from "./LabelThreeFields";
 import "react-datetime/css/react-datetime.css";
 import LabelOneSelect from "./LabelOneSelect";
+import EndowmentInformation from './Endowment';
 
-function PersonalInformation( {nameBox} ){
+function PersonalInformation( {nameBox, onGenderChange} ){
+
+    const [selectedGender, setSelectedGender] = useState('');
+
     return(
         <div className="form-box">
             <h3>{nameBox}</h3>
@@ -15,6 +19,7 @@ function PersonalInformation( {nameBox} ){
                 inputPlaceholder={"Nombre Completo"}
                 inputId={"full_name"}
                 inputType={"text"}
+                required={true}
             />
 
             <div className="box-date">
@@ -29,7 +34,8 @@ function PersonalInformation( {nameBox} ){
                 </div>
                 <div className="one-field-container">
                 <label>Lugar de Nacimiento:</label>
-                    <input id="birth_place" type="text" placeholder="Lugar de nacimiento"></input>
+                    <input id="birth_place" type="text" placeholder="Lugar de nacimiento"
+                    required={true}></input>
                 </div>  
             </div>
             
@@ -49,37 +55,60 @@ function PersonalInformation( {nameBox} ){
 
             <LabelOneSelect
                 labelText={"Género:"} 
+                selectText={"Seleccione su género"}
                 initialOptions={['Masculino', 'Femenino']}
+                required={true}
+                onChange={setSelectedGender}
+                selectId={"gender-select"}
             />
 
-            <LabelThreeFields 
-                labelText="Libreta Militar:"
-                inputPlaceholder="Número Libreta Militar"
-                inputId={"military_document"}
-                inputType={"number"}
+            {selectedGender === 'Masculino' && (
+                <div className="male-info">
+                    <LabelThreeFields 
+                        labelText="Libreta Militar:"
+                        inputPlaceholder="Número Libreta Militar"
+                        inputId={"military_document"}
+                        inputType={"number"}
 
-                labelText2={"Clase:"}
-                inputPlaceholder2={"Primera/Segunda"}
-                inputId2={"military_document_class"}
-                inputType2={"text"}
+                        labelText2={"Clase:"}
+                        inputPlaceholder2={"Primera/Segunda"}
+                        inputId2={"military_document_class"}
+                        inputType2={"text"}
 
-                labelText3={"Distrito:"}
-                inputPlaceholder3={" ## "}
-                inputId3={"military_document_district"}
-                inputType3={"number"}
-            />
+                        labelText3={"Distrito:"}
+                        inputPlaceholder3={" ## "}
+                        inputId3={"military_document_district"}
+                        inputType3={"number"}
+                    />
+                </div>
+            )}
 
-            <LabelTwoFields 
-                labelText={"No. Cuenta Bancaria:"}
-                inputPlaceholder={"No. Cuenta"}
-                inputId={"bank_account_number"}
-                inputType={"number"}
+            <div className="two-field-container">
+                <LabelOneField
+                    labelText={"No. Cuenta Bancaria:"}
+                    inputPlaceholder={"No. Cuenta"}
+                    inputId={"bank_account_number"}
+                    inputType={"number"}
+                    required={true}
+                />
 
-                labelText2={"Entidad Bancaria: "}
-                inputPlaceholder2={"Nombre Entidad Bancaria"}
-                inputId2={"bank_name"}
-                inputType2={"text"}
-            />
+                <LabelOneSelect 
+                    labelText={"Entidad Bancaria:"} 
+                    selectText={"Seleccione Entidad Bancaria"}
+                    initialOptions={['BANCAMIA S.A.', 'BANCO AGRARIO', 'BANCO AV VILLAS', 'BANCO CAJA SOCIAL BCSC SA', 
+                    'BANCO COOPERATIVO COOPCENTRAL', 'BANCO CREDIFINANCIERA SA.', 'BANCO DAVIVIENDA SA', 'BANCO DE BOGOTA', 
+                    'BANCO DE OCCIDENTE', 'BANCO FALABELLA S.A.', 'BANCO FINANDINA S.A.', 'BANCO GNB SUDAMERIS', 
+                    'BANCO J.P. MORGAN COLOMBIA S.A', 'BANCO MUNDO MUJER', 'BANCO PICHINCHA', 'BANCO POPULAR', 
+                    'BANCO SANTANDER DE NEGOCIOS CO', 'BANCO SERFINANZA S.A', 'BANCO W S.A.', 'BANCOLDEX S.A.', 
+                    'BANCOLOMBIA', 'BANCOOMEVA', 'BBVA COLOMBIA', 'CITIBANK', 'COLTEFINANCIERA S.A', 'CONFIAR', 
+                    'COOFINEP COOPERATIVA FINANCIER', 'COOPERATIVA FINANCIERA DE ANTIOQUIA', 
+                    'COOTRAFA COOPERATIVA FINANCIERA', 'DAVIPLATA', 'FINANCIERA JURISCOOP S.A. COMP', 
+                    'GIROS Y FINANZAS CF', 'IRIS', 'ITAU', 'LULO BANK S.A.', 'MIBANCO S.A.', 'MOVII', 'NEQUI', 
+                    'RAPPIPAY', 'SCOTIABANK COLPATRIA S.A', 'BANKIA', 'COPRUDEA', 'COOPRUDEA', 'Cooprudea']}
+                    required={true}
+                />
+            </div>
+           
 
             <LabelTwoFields 
                 labelText={"Código (Si aplica):"}
@@ -91,6 +120,7 @@ function PersonalInformation( {nameBox} ){
                 inputPlaceholder2={"RH"}
                 inputId2={"blood_type"}
                 inputType2={"text"}
+                required2={true}
             />
         </div>
     

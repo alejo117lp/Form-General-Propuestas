@@ -5,6 +5,9 @@ import PersonalInformation from './components/PersonalInfo';
 import HomeInformation from './components/HomeInfo';
 import SocialSecurity from './components/SocialSecurity';
 import ExclusiveInitInfo from './components/ExclusiveInitInfo';
+import EndowmentInformation from './components/Endowment';
+import React, { useState } from 'react';
+
 
 function App() {
 
@@ -19,6 +22,8 @@ function App() {
         console.log('Formulario inválido. Por favor, completa todos los campos requeridos.');
     }
   };
+
+  const [selectedGender, setSelectedGender] = useState('');
 
   return (
     <div className="App">
@@ -36,6 +41,7 @@ function App() {
           <br/>
           <PersonalInformation 
             nameBox={"Información Personal"}
+            onGenderChange={setSelectedGender}
           />
           <br/>
           <HomeInformation 
@@ -46,6 +52,10 @@ function App() {
             nameBox={"Información  Seguridad Social"}
           />
           <br/>
+          <EndowmentInformation
+            nameBox={"Información Dotación"}
+            gender={selectedGender}
+          />
           <button className='principal-button' type="submit">Enviar</button>
         </div>
         <br/>
