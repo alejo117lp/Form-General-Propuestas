@@ -1,5 +1,4 @@
 import React from "react";
-import DateTime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
 import '../stylesheets/PersonalInfo.css';
 import LabelOneField from "./LabelOneField";

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import FormBox from './components/FormBox';
+import FormBox from './components/FormBox'; //No Borrar FormBox
 import PersonalInformation from './components/PersonalInfo';
 import HomeInformation from './components/HomeInfo';
 import SocialSecurity from './components/SocialSecurity';
@@ -10,6 +10,19 @@ import React, { useState } from 'react';
 
 
 function App() {
+
+
+  const manSize = ['28', '30', '32', '34', '36', '38'];
+  const womanSize = ['6', '8', '10', '12', '14', '16', '18'];
+
+  const [selectedGender, setSelectedGender] = useState('');
+
+  const handleGenderChange = (gender) => {
+    //console.log("Género seleccionado:", gender); // Debería mostrar 'Masculino' o 'Femenino'
+    setSelectedGender(gender);
+};
+
+  const sizeOptions = selectedGender === 'Masculino' ? manSize : womanSize;
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,8 +35,6 @@ function App() {
         console.log('Formulario inválido. Por favor, completa todos los campos requeridos.');
     }
   };
-
-  const [selectedGender, setSelectedGender] = useState('');
 
   return (
     <div className="App">
@@ -41,7 +52,7 @@ function App() {
           <br/>
           <PersonalInformation 
             nameBox={"Información Personal"}
-            onGenderChange={setSelectedGender}
+            onGenderChange={handleGenderChange}
           />
           <br/>
           <HomeInformation 
@@ -55,7 +66,9 @@ function App() {
           <EndowmentInformation
             nameBox={"Información Dotación"}
             gender={selectedGender}
+            sizeOptions={sizeOptions}
           />
+          <br/>
           <button className='principal-button' type="submit">Enviar</button>
         </div>
         <br/>

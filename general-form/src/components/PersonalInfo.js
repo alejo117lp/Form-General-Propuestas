@@ -5,11 +5,15 @@ import LabelTwoFields from "./LabelTwoFields";
 import LabelThreeFields from "./LabelThreeFields";
 import "react-datetime/css/react-datetime.css";
 import LabelOneSelect from "./LabelOneSelect";
-import EndowmentInformation from './Endowment';
 
 function PersonalInformation( {nameBox, onGenderChange} ){
 
     const [selectedGender, setSelectedGender] = useState('');
+    
+    const handleGenderChange = (value) => {
+        setSelectedGender(value);
+        onGenderChange(value); // Asegúrate de que esta línea esté llamando correctamente a la función pasada desde App.js
+    };
 
     return(
         <div className="form-box">
@@ -58,7 +62,7 @@ function PersonalInformation( {nameBox, onGenderChange} ){
                 selectText={"Seleccione su género"}
                 initialOptions={['Masculino', 'Femenino']}
                 required={true}
-                onChange={setSelectedGender}
+                onChange={handleGenderChange}
                 selectId={"gender-select"}
             />
 

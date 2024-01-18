@@ -1,11 +1,8 @@
 import React from "react";
 import LabelOneSelect from "./LabelOneSelect";
 
-var manSize = ['6', '8', '10', '12', '14', '16'];
-var womanSize = ['6', '8', '10', '12', '14', '16']
-
-
-function EndowmentInformation( {nameBox, gender} ){
+function EndowmentInformation( {nameBox, sizeOptions} ){
+  //console.log("Opciones de talla:", sizeOptions);
   return(
     <div className="form-box">
         <h3>{nameBox}</h3>
@@ -13,7 +10,7 @@ function EndowmentInformation( {nameBox, gender} ){
           <LabelOneSelect 
             labelText={"Talla Pantalón: "}
             selectText={"Seleccione su talla de Pantalón"}
-            initialOptions={gender === 'Masculino' ? manSize : womanSize}
+            initialOptions= {sizeOptions}
           />
 
           <LabelOneSelect 

@@ -1,8 +1,6 @@
 import React from "react";
 import LabelTwoFields from "./LabelTwoFields";
-import DateTime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
-import TestCode from "./Test";
 import TwoCheckbox1 from "./TwoCheckBox1";
 import LabelOneField from "./LabelOneField";
 
@@ -11,24 +9,6 @@ function ExclusiveInitInfo( {nameBox} ){
 
         <div className="form-box">
             <h3>{nameBox}</h3>
-            {/*
-            <div className="box-date">
-                <div className="one-field-container">
-                    <label>Fecha de ingreso: </label>
-                    <DateTime className="date-time-props"
-                    name="birth-date"
-                    inputProps={{ placeholder: "aaaa/mm/dd"  }}
-                    dateFormat="YYYY/MM/DD"
-                    timeFormat={false}
-                    />
-                </div>
-                <div className="one-field-container">
-                    <label>Cargo:</label>
-                    <input name="place-birth" type="text" 
-                    placeholder="Cargo empleado" readOnly></input>
-                </div>  
-            </div>
-            */}
 
             <LabelOneField 
                 readOnly={true}
