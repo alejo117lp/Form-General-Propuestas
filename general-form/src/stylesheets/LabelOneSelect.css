@@ -5,3 +5,19 @@
     align-items: center;
     grid-gap: 15px;
 }
+
+/* Mediaqueries*/
+
+/*Celular*/
+@media (max-width: 440px) {
+    
+    .select-label-container{
+        display: block;
+    }
+
+  }
+  
+  /*Tablet*/
+  @media (min-width: 441px) and (max-width:810px) {
+  
+}

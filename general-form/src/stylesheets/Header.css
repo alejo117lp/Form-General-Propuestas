@@ -15,3 +15,16 @@
     height: 90px;
     background-color: #5c9c31;
 }
+
+/* Mediaqueries*/
+
+/*Celular*/
+@media (max-width: 440px) {
+  
+    
+}
+
+/*Tablet*/
+@media (min-width: 441px) and (max-width:810px) {
+
+}

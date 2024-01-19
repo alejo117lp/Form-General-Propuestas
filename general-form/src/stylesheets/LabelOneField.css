@@ -26,3 +26,22 @@
     align-items: center;
     grid-gap:15px;
 }
+
+/* Mediaqueries*/
+
+/*Celular*/
+@media (max-width: 440px) {
+  .one-field-container, .two-field-container, .three-field-container{
+    display: block;
+  }
+
+  .box-date{
+    display: block;
+  }
+    
+}
+
+/*Tablet*/
+@media (min-width: 441px) and (max-width:810px) {
+
+}
