@@ -115,6 +115,7 @@ select{
 @media (max-width: 440px) {
   input{
     min-width: 110px;
+    max-width: 215px;
   }
 
   .principal-container{
@@ -123,7 +124,7 @@ select{
 
   .form-box{
     min-width: 200px;
-    width: 310px;
+    max-width: 280px;
     padding: 10px 20px;
   }
 
