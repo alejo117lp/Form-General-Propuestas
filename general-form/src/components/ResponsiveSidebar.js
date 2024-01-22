@@ -25,9 +25,10 @@ function ResponsiveSidebar( {headerText, footerText} ){
                 <NavLink exact to="/" activeClassName="activeClicked">
                     <CDBSidebarMenuItem icon="th-large">Inicio</CDBSidebarMenuItem>
                 </NavLink>
-                <NavLink exact to="/" activeClassName="activeClicked" hrefLang="">
-                    <CDBSidebarMenuItem icon="address-card">Formulario</CDBSidebarMenuItem>
+                <NavLink to="/GeneralForm" activeClassName="activeClicked">
+                  <CDBSidebarMenuItem icon="address-card">Formulario</CDBSidebarMenuItem>
                 </NavLink>
+
                 <NavLink exact to="/" activeClassName="activeClicked">
                     <CDBSidebarMenuItem icon="user-times">Salir</CDBSidebarMenuItem>
                 </NavLink>
