@@ -5,6 +5,7 @@ import '../stylesheets/LabelOneSelect.css';
 
 const LabelOneSelect = ({ initialOptions, labelText, selectText, required, selectId, onChange }) => {
 
+  //useState para verificar la opción elegida por el usuario
     const [selectedOption, setSelectedOption] = useState('');
   
     const handleSelectChange = (e) => {

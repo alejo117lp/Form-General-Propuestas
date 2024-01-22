@@ -1,5 +1,4 @@
 import React from "react";
-import LabelThreeFields from "./LabelThreeFields";
 import LabelOneSelect from "./LabelOneSelect";
 
 function SocialSecurity( {nameBox} ){

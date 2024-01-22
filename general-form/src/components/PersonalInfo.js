@@ -12,7 +12,7 @@ function PersonalInformation( {nameBox, onGenderChange} ){
     
     const handleGenderChange = (value) => {
         setSelectedGender(value);
-        onGenderChange(value); // Asegúrate de que esta línea esté llamando correctamente a la función pasada desde App.js
+        onGenderChange(value); // Asegúrate de que esta línea esté llamando correctamente a la función pasada desde donde se esté usando el componente
     };
 
     return(

@@ -7,10 +7,10 @@ import {
   CDBSidebarHeader,
   CDBSidebarMenu,
   CDBSidebarMenuItem,
-  CDBIcon
 } from 'cdbreact';
 import { NavLink } from 'react-router-dom';
 /*  Icons are taken from: https://fontawesome.com/v4/icons/ */
+/* Código tomado de https://www.devwares.com/blog/create-responsive-sidebar-in-react/ */
 
 function ResponsiveSidebar( {headerText, footerText} ){
   return(

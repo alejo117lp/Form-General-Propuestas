@@ -1,6 +1,5 @@
 import React from "react";
 import LabelOneField from "./LabelOneField";
-import LabelTwoFields from "./LabelTwoFields";
 import LabelThreeFields from "./LabelThreeFields";
 import LabelOneSelect from "./LabelOneSelect";
 
