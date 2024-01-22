@@ -43,5 +43,14 @@
 
 /*Tablet*/
 @media (min-width: 441px) and (max-width:810px) {
+  .one-field-container, .two-field-container, .three-field-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;;
+  }
 
+  .box-date{
+    display: block;
+  }
 }

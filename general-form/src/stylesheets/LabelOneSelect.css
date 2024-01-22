@@ -20,4 +20,7 @@
   /*Tablet*/
   @media (min-width: 441px) and (max-width:810px) {
   
+    .select-label-container{
+        display: block;
+    }
 }

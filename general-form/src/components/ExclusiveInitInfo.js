@@ -48,7 +48,7 @@ function ExclusiveInitInfo( {nameBox} ){
             <LabelTwoFields
                 readOnly={true}
                 labelText={"Nivel de Riesgo (ARL):"}
-                inputId={""}
+                inputId={"level_risk"}
                 inputPlaceholder={"Nivel de Riesgo"}
                 inputType={"text"}
 
@@ -58,22 +58,21 @@ function ExclusiveInitInfo( {nameBox} ){
                 inputType2={"text"}
             />
 
-            <TwoCheckbox1 
+            <LabelTwoFields
                 readOnly={true}
-                labelText0={"Jornada:"}
-
-                labelText={"MT:"}
+                labelText={"Jornada:"}
                 inputId={""}
-                inputPlaceholder={""}
-                inputType={"checkbox"}
+                inputPlaceholder={"MT / TC"}
+                inputType={"text"}
 
-                labelText2={"TC:"}
+                labelText2={"Estrato:"}
                 inputId2={""}
-                inputPlaceholder2={""}
-                inputType2={"checkbox"}
-
-                labelText3={"Estrato:"}
+                inputPlaceholder2={"social_stratum"}
+                inputType2={"text"}
             />
+            
+
+
         </div>
        
     );
