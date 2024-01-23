@@ -17,21 +17,21 @@ function ResponsiveSidebar( {headerText, footerText} ){
     <div style={{position:'fixed', display: 'flex', height: '100vh', 
          overflow: 'scroll initial',  fontFamily: 'Work Sans'}}>
       <CDBSidebar textColor= "#fff" backgroundColor="#333" toggled={true}>
-            <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large" style={{ fontSize: '28px'}}></i>}>
+            <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large" style={{ fontSize: '32px'}}></i>}>
                 {headerText}
             </CDBSidebarHeader>
         <CDBSidebarContent className="sidebar-content">
             <CDBSidebarMenu>
-                <NavLink exact to="/" activeClassName="activeClicked">
+                <NavLink exact to="/Home" activeClassName="activeClicked">
                     <CDBSidebarMenuItem icon="th-large">Inicio</CDBSidebarMenuItem>
                 </NavLink>
                 <NavLink to="/GeneralForm" activeClassName="activeClicked">
                   <CDBSidebarMenuItem icon="address-card">Formulario</CDBSidebarMenuItem>
                 </NavLink>
 
-                <NavLink exact to="/" activeClassName="activeClicked">
+                {/*<NavLink exact to="/" activeClassName="activeClicked">
                     <CDBSidebarMenuItem icon="user-times">Salir</CDBSidebarMenuItem>
-                </NavLink>
+                  </NavLink> */}
             </CDBSidebarMenu>
         </CDBSidebarContent>
 

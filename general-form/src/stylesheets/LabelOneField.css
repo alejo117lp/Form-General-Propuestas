@@ -30,7 +30,7 @@
 /* Mediaqueries*/
 
 /*Celular*/
-@media (max-width: 440px) {
+@media (max-width: 700px) {
   .one-field-container, .two-field-container, .three-field-container{
     display: block;
   }
@@ -42,12 +42,9 @@
 }
 
 /*Tablet*/
-@media (min-width: 441px) and (max-width:810px) {
+@media (min-width: 701px) and (max-width:1024px) {
   .one-field-container, .two-field-container, .three-field-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;;
+    display: block;
   }
 
   .box-date{
