@@ -1,0 +1,18 @@
+#profile_picture{
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.upload-pic-container{
+  padding: 15px;
+  display: block;
+}
+
+.label-upload-file{
+  margin-bottom: 30px;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+}

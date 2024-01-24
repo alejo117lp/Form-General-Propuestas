@@ -25,7 +25,7 @@ function HomeInformation( {nameBox} ){
                 />
 
                 <LabelOneSelect 
-                    labelText={"Entidad Bancaria:"} 
+                    labelText={"Municipio:"} 
                     selectText={"Seleccione municipio de residencia"}
                     selectId={'home_city'}
                     initialOptions={['MEDELLÍN', 'ABEJORRAL', 'ABRIAQUÍ', 'ACHÍ', 'ALEJANDRÍA', 'ALTOS DEL ROSARIO', 'AMAGÁ', 

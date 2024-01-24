@@ -5,6 +5,7 @@ import LabelTwoFields from "./LabelTwoFields";
 import LabelThreeFields from "./LabelThreeFields";
 import "react-datetime/css/react-datetime.css";
 import LabelOneSelect from "./LabelOneSelect";
+import UploadPicture from './UploadPicture';
 
 function PersonalInformation( {nameBox, onGenderChange} ){
 
@@ -24,6 +25,10 @@ function PersonalInformation( {nameBox, onGenderChange} ){
                 inputId={"full_name"}
                 inputType={"text"}
                 required={true}
+            />
+
+            <UploadPicture 
+                labelText={'Foto tipo documento:'}
             />
 
             <div className="box-date">

@@ -5,6 +5,7 @@
 
 html, body{
   font-size: 18px;
+  font-family:'Work Sans';
   background-color: #ededee;
   color: #333333;
 }
@@ -43,6 +44,7 @@ input::placeholder {
 }
 
 select{
+  font-family:'Work Sans';
   min-width: 150px;
   min-height: 11px;
   width: 100%;
@@ -51,7 +53,6 @@ select{
   font-size: .875rem;
   color: #565656;
   padding: 8px 12px;
-  font-family:'Work Sans';
 }
 
 

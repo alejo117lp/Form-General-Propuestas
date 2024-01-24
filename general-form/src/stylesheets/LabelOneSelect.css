@@ -1,4 +1,5 @@
 .select-label-container{
+    font-family:'Work Sans';
     display: grid;
     grid-template-columns: 90px 2fr;
     padding: 15px;

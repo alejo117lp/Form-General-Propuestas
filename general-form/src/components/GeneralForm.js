@@ -45,7 +45,7 @@ function GeneralForm(){
               nameBox={"Información Personal"}
               onGenderChange={handleGenderChange}
             />
-            <br/>
+            <br />
             <HomeInformation 
               nameBox={"Información Domicilio"}
             />
