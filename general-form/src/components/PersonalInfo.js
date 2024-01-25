@@ -19,13 +19,6 @@ function PersonalInformation( {nameBox, onGenderChange} ){
     return(
         <div className="form-box">
             <h3>{nameBox}</h3>
-            <LabelOneField 
-                labelText={"Nombre Completo: "}
-                inputPlaceholder={"Nombre Completo"}
-                inputId={"full_name"}
-                inputType={"text"}
-                required={true}
-            />
 
             <UploadPicture 
                 labelText={'Foto tipo documento:'}

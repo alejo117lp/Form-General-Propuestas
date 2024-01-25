@@ -1,10 +1,10 @@
 import React from "react";
 import LabelTwoFields from "./LabelTwoFields";
 import "react-datetime/css/react-datetime.css";
-import TwoCheckbox1 from "./TwoCheckBox1";
 import LabelOneField from "./LabelOneField";
 
-function ExclusiveInitInfo( {nameBox} ){
+function ExclusiveInitInfo( {nameBox, project} ){
+
     return(
 
         <div className="form-box">
@@ -35,7 +35,7 @@ function ExclusiveInitInfo( {nameBox} ){
                 readOnly={true}
                 labelText={"Proyecto:"}
                 inputId={""}
-                inputPlaceholder={"Proyecto"}
+                inputPlaceholder={'Proyecto'}
                 inputType={"text"}
                 
 
@@ -44,6 +44,31 @@ function ExclusiveInitInfo( {nameBox} ){
                 inputPlaceholder2={"Centro de Costos"}
                 inputType2={"text"}
             />
+
+
+            {project === 'ASEO' && (
+                <LabelOneField 
+                readOnly={true}
+                labelText={"Zona: "}
+                inputId={" "}
+                inputPlaceholder={"Zona asignada"}
+                inputType={"text"}
+                />
+                )
+            }
+            
+            {project === 'METRO' && (
+                <LabelOneField 
+                readOnly={true}
+                labelText={"Código de Tripulación: "}
+                inputId={" "}
+                inputPlaceholder={"Código de tripulación empleado"}
+                inputType={"text"}
+                />
+                )
+            }
+
+            
 
             <LabelTwoFields
                 readOnly={true}

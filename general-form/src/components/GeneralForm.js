@@ -5,8 +5,9 @@ import HomeInformation from './HomeInfo';
 import SocialSecurity from './SocialSecurity';
 import ExclusiveInitInfo from './ExclusiveInitInfo';
 import EndowmentInformation from './Endowment';
+import EndowmentEmvariasForm from './EndowmentEmvarias';
 
-function GeneralForm(){
+function GeneralForm( {projectEmplo} ){
   const manSize = ['28', '30', '32', '34', '36', '38'];
   const womanSize = ['6', '8', '10', '12', '14', '16', '18'];
 
@@ -54,11 +55,19 @@ function GeneralForm(){
               nameBox={"Información  Seguridad Social"}
             />
             <br/>
+            {
+
+            }
             <EndowmentInformation
               nameBox={"Información Dotación"}
               gender={selectedGender}
               sizeOptions={sizeOptions}
             />
+
+            <EndowmentEmvariasForm 
+              nameBox={'Dotación Emvarias'}
+            />
+
             <br/>
             <button className='principal-button' type="submit">Enviar</button>
           </div>

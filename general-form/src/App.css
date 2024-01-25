@@ -140,7 +140,7 @@ select{
 /*Tablet*/
 @media (min-width: 701px) and (max-width:1024px) {
   input, select{
-    min-width: 430px;
+    min-width: 210px;
     max-width: 600px;
     width: 100%;
   }

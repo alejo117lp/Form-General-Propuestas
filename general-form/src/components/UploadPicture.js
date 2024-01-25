@@ -3,6 +3,7 @@ import FormBox from './FormBox';
 import '../App.css';
 import '../stylesheets/LabelOneField.css';
 import '../stylesheets/UploadPicture.css';
+import LabelOneField from './LabelOneField';
 
 
 function UploadPicture( {labelText} ){
@@ -26,12 +27,18 @@ function UploadPicture( {labelText} ){
   };*/
 
   return(
-     <form className='two-field-container' method="post" /*onSubmit={handleSubmit}*/>
+     <form className='name-and-pic' method="post" /*onSubmit={handleSubmit}*/>
+      <LabelOneField 
+        labelText={"Nombre Completo: "}
+        inputPlaceholder={"Nombre Completo"}
+        inputId={"full_name"}
+        inputType={"text"}
+        required={true}
+      />
       <div className='upload-pic-container'>
         <label className='label-upload-file'>{labelText}</label>
         <div>
           <input id='profile_picture_input' type="file" name="admin_picture" onChange={handleImageChange} />
-          <i className='fa fa-camera'></i>
         </div>
         <div className='clearfix'></div>
       </div>

@@ -9,6 +9,7 @@ function SocialSecurity( {nameBox} ){
             <LabelOneSelect 
                 labelText="EPS: "
                 selectText= "Seleccione su EPS"
+                selectId={'eps'}
                 required={true}
                 initialOptions={['EPS COLMEDICA', 'EPS HUMANA VIVIR', 'EPS COMPENSAR', 'EPS SANITAS SA', 
                 'ADRESS', 'EPS SURA', 'EPS SALUD TOTAL', 'EPS SALUD COLPATRIA SA', 'EPS COOMEVA', 
@@ -23,6 +24,7 @@ function SocialSecurity( {nameBox} ){
             <LabelOneSelect 
                 labelText="Pensiones: "
                 selectText= "Seleccione su Fondo de Pensiones"
+                selectId={'pension'}
                 required={true}
                 initialOptions={['AFP PROTECCION', 'COLFONDOS', 'AFP SKANDIA', 'AFP HORIZONTE', 'AFP PORVENIR', 
                 'AFP COLPENSIONES', 'COLPFONDOS']}
@@ -31,6 +33,7 @@ function SocialSecurity( {nameBox} ){
             <LabelOneSelect 
                 labelText="Cesantías: "
                 selectText= "Seleccione su Fondo de Cesantías"
+                selectId={'layoffs'}
                 required={true}
                 initialOptions={['PROTECCION', 'PORVENIR', 'HORIZONTE', 'COLFONDOS', 'SKANDIA', 
                 'FONDO NACIONAL DEL AHORRO', 'COLPENSIONES']}
