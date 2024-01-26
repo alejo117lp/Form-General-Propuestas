@@ -7,7 +7,7 @@ import ExclusiveInitInfo from './ExclusiveInitInfo';
 import EndowmentInformation from './Endowment';
 import EndowmentEmvariasForm from './EndowmentEmvarias';
 
-function GeneralForm( {projectEmplo} ){
+function GeneralForm( {projectEmployee} ){
   const manSize = ['28', '30', '32', '34', '36', '38'];
   const womanSize = ['6', '8', '10', '12', '14', '16', '18'];
 
@@ -40,6 +40,7 @@ function GeneralForm( {projectEmplo} ){
             <h1>Datos Generales</h1>
             <ExclusiveInitInfo 
               nameBox={"Información Administrativa"}
+              project={projectEmployee}
             />
             <br/>
             <PersonalInformation 
@@ -55,19 +56,19 @@ function GeneralForm( {projectEmplo} ){
               nameBox={"Información  Seguridad Social"}
             />
             <br/>
-            {
-
-            }
-            <EndowmentInformation
-              nameBox={"Información Dotación"}
-              gender={selectedGender}
-              sizeOptions={sizeOptions}
-            />
-
-            <EndowmentEmvariasForm 
+           
+           {projectEmployee === 'ASEO' ? (
+              <EndowmentEmvariasForm 
               nameBox={'Dotación Emvarias'}
             />
-
+           ): (
+            <EndowmentInformation
+            nameBox={"Información Dotación"}
+            gender={selectedGender}
+            sizeOptions={sizeOptions}
+            />
+           )}
+            
             <br/>
             <button className='principal-button' type="submit">Enviar</button>
           </div>

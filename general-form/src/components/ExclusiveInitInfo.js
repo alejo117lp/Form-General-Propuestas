@@ -68,8 +68,6 @@ function ExclusiveInitInfo( {nameBox, project} ){
                 )
             }
 
-            
-
             <LabelTwoFields
                 readOnly={true}
                 labelText={"Nivel de Riesgo (ARL):"}
@@ -91,13 +89,11 @@ function ExclusiveInitInfo( {nameBox, project} ){
                 inputType={"text"}
 
                 labelText2={"Estrato:"}
-                inputId2={""}
-                inputPlaceholder2={"social_stratum"}
+                inputId2={"social_stratum"}
+                inputPlaceholder2={"Estrato Empleado"}
                 inputType2={"text"}
             />
             
-
-
         </div>
        
     );
