@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FormBox from './FormBox';
 import '../App.css';
 import '../stylesheets/LabelOneField.css';
 import '../stylesheets/UploadPicture.css';

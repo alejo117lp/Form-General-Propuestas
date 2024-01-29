@@ -17,6 +17,7 @@ function EndowmentEmvariasForm( {nameBox} ){
     setSelectedStyle(style);
   };
 
+  //Conversión tallas camisa
   const convertShirtSize = (size) => {
     const sizeMap = {
       '8': 'S',
@@ -46,7 +47,6 @@ function EndowmentEmvariasForm( {nameBox} ){
   const handleShirtSizeChange = (size) => {
     const convertedSize = convertShirtSize(size);
     setSelectedShirtSize(convertedSize);
-    
   };
 
   console.log(selectedShirtSize);

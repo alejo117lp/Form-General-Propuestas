@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FormBox from './FormBox';
 import PersonalInformation from './PersonalInfo';
 import HomeInformation from './HomeInfo';
 import SocialSecurity from './SocialSecurity';

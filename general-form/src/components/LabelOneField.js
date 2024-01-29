@@ -1,5 +1,5 @@
 import React from "react";
-import '../stylesheets/LabelOneField.css'
+import '../stylesheets/LabelOneField.css';
 
 
 function LabelOneField( {readOnly, labelText, inputId, inputType, inputPlaceholder, required } ){

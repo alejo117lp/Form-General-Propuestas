@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/Header';
-import FormBox from './components/FormBox'; //No Borrar FormBox
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import React from 'react';
 import ResponsiveSidebar from './components/ResponsiveSidebar';
