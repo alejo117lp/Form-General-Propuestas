@@ -11,6 +11,7 @@ function EndowmentInformation( {nameBox, sizeOptions} ){
             labelText={"Talla Pantalón: "}
             selectText={"Seleccione su talla de Pantalón"}
             initialOptions= {sizeOptions}
+            
           />
 
           <LabelOneSelect 
