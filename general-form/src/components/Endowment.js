@@ -11,12 +11,15 @@ function EndowmentInformation( {nameBox, sizeOptions} ){
             labelText={"Talla Pantalón: "}
             selectText={"Seleccione su talla de Pantalón"}
             initialOptions= {sizeOptions}
-            
+            selectId={'pantSize'}
+            required={true}
           />
 
           <LabelOneSelect 
             labelText={"Talla Camisa: "}
             selectText={"Seleccione su talla Camisa"}
+            selectId={'shirt_size'}
+            required={true}
             initialOptions={['XS', 'S', 'M', 'L', 'XL', 'M', 'XXL', '40', '16', '10',
              '12', '38', '8', '14', '42', '36', '20', '18', '44', '34', '30', '24', 
              '52', '22', '32', '46', '54', '50', '48', '4XL', '41', '37', '39', '35', '43']}
@@ -25,6 +28,8 @@ function EndowmentInformation( {nameBox, sizeOptions} ){
           <LabelOneSelect 
             labelText={"No. Calzado: "}
             selectText={"Seleccione su talla de Calzado"}
+            selectId={'shoes_size'}
+            required={true}
             initialOptions={['34', '35', '36', '37', '38', '39', '40', '41', '42',
              '43', '44', '45']}
           />

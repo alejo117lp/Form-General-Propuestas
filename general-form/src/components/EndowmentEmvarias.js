@@ -60,6 +60,7 @@ function EndowmentEmvariasForm( {nameBox} ){
           selectText={'Elija su estilo de dotación'}
           initialOptions={['Hombre', 'Mujer']}
           onChange={handleStyleChange}
+          selectId={'dress_style'}
         />
 
         {selectedStyle === 'Hombre' ? (
@@ -68,6 +69,7 @@ function EndowmentEmvariasForm( {nameBox} ){
               labelText={"Talla Pantalón: "}
               selectText={"Seleccione su talla de Pantalón"}
               initialOptions= {pantManSize}
+              selectId={'pant_size'}
             />
 
             <LabelOneSelect 
@@ -75,6 +77,7 @@ function EndowmentEmvariasForm( {nameBox} ){
               selectText={"Seleccione su talla de Camisa"}
               initialOptions= {shirtManSize}
               onChange={handleShirtSizeChange}
+              selectId={'shirt_size'}
             />
           </div>
           
@@ -84,12 +87,14 @@ function EndowmentEmvariasForm( {nameBox} ){
               labelText={"Talla Pantalón: "}
               selectText={"Seleccione su talla de Pantalón"}
               initialOptions= {pantWomanSize}
+              selectId={'pant_size'}
             />
             <LabelOneSelect 
               labelText={"Talla Camisa: "}
               selectText={"Seleccione su talla de Camisa"}
               initialOptions= {shirtWomanSize}
               onChange={handleShirtSizeChange}
+              selectId={'shirt_size'}
             />
           </div>
         )}

@@ -33,7 +33,7 @@ function SocialSecurity( {nameBox} ){
             <LabelOneSelect 
                 labelText="Cesantías: "
                 selectText= "Seleccione su Fondo de Cesantías"
-                selectId={'layoffs'}
+                selectId={'severance'}
                 required={true}
                 initialOptions={['PROTECCION', 'PORVENIR', 'HORIZONTE', 'COLFONDOS', 'SKANDIA', 
                 'FONDO NACIONAL DEL AHORRO', 'COLPENSIONES']}

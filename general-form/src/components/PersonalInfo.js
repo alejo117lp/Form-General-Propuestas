@@ -61,7 +61,7 @@ function PersonalInformation( {nameBox, onGenderChange} ){
                 initialOptions={['Masculino', 'Femenino']}
                 required={true}
                 onChange={handleGenderChange}
-                selectId={"gender-select"}
+                selectId={"gender"}
             />
 
             {selectedGender === 'Masculino' && (

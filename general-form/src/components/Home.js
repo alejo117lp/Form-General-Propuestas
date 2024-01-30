@@ -5,10 +5,10 @@ function Home(){
     <div className='principal-container'>
       <Login 
         labelUsername={'Usuario:'}
-        idUsername={''}
+        idUsername={'username'}
         usernamePlaceholder={'Ingresa tu usuario'}
         labelPassword={'Contraseña:'}
-        idPassword={''}
+        idPassword={'password'}
         passwordPlaceholder={'Ingresa tu contraseña'}
       />
     </div>

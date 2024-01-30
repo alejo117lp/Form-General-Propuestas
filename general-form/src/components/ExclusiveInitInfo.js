@@ -21,12 +21,12 @@ function ExclusiveInitInfo( {nameBox, project} ){
              <LabelTwoFields
                 readOnly={true}
                 labelText={"Cargo: "}
-                inputId={""}
+                inputId={"employee_rol"}
                 inputPlaceholder={"Cargo Empleado"}
                 inputType={"text"}
 
                 labelText2={"Fecha de ingreso:"}
-                inputId2={""}
+                inputId2={"entry_date"}
                 inputPlaceholder2={"Fecha de Ingreso Empleado"}
                 inputType2={"text"}
             />
@@ -34,13 +34,13 @@ function ExclusiveInitInfo( {nameBox, project} ){
             <LabelTwoFields
                 readOnly={true}
                 labelText={"Proyecto:"}
-                inputId={""}
+                inputId={"employee_project "}
                 inputPlaceholder={'Proyecto'}
                 inputType={"text"}
                 
 
                 labelText2={"Centro de Costos:"}
-                inputId2={""}
+                inputId2={"cost_center"}
                 inputPlaceholder2={"Centro de Costos"}
                 inputType2={"text"}
             />
@@ -50,7 +50,7 @@ function ExclusiveInitInfo( {nameBox, project} ){
                 <LabelOneField 
                 readOnly={true}
                 labelText={"Zona: "}
-                inputId={" "}
+                inputId={"employee_zone"}
                 inputPlaceholder={"Zona asignada"}
                 inputType={"text"}
                 />
@@ -61,7 +61,7 @@ function ExclusiveInitInfo( {nameBox, project} ){
                 <LabelOneField 
                 readOnly={true}
                 labelText={"Código de Tripulación: "}
-                inputId={" "}
+                inputId={"employee_code"}
                 inputPlaceholder={"Código de tripulación empleado"}
                 inputType={"text"}
                 />
@@ -76,7 +76,7 @@ function ExclusiveInitInfo( {nameBox, project} ){
                 inputType={"text"}
 
                 labelText2={"Salario Asignado:"}
-                inputId2={""}
+                inputId2={"salario"}
                 inputPlaceholder2={"Salario empleado"}
                 inputType2={"text"}
             />
@@ -84,7 +84,7 @@ function ExclusiveInitInfo( {nameBox, project} ){
             <LabelTwoFields
                 readOnly={true}
                 labelText={"Jornada:"}
-                inputId={""}
+                inputId={"working_day"}
                 inputPlaceholder={"MT / TC"}
                 inputType={"text"}
 
